@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create a new Job</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Karibu PataKazi</title>
 </head>
 <body>
-    <h1>Create a new job</h1>  
+    <h2>PataKazi</h2>
 </body>
 </html>
