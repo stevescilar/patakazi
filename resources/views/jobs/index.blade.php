@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobs Listing</title>
-</head>
+{{-- custom title --}}
+@section('title')
+Job Listings
+@endsection
 
-<body>
-    <h1>{{ $title }}</h1>
+@section('content')
     @if (!empty($jobs))
         <ul>
             <!-- looping through the items using directives -->
@@ -20,6 +17,4 @@
     @else
         <p>No jobs found</p>
     @endif
-</body>
- 
-</html>
+@endsection
