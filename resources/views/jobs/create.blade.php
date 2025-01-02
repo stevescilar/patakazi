@@ -1,11 +1,4 @@
-@extends('layout')
-
-{{-- custom title --}}
-@section('title')
-Create Job
-@endsection
-{{-- content --}}
-@section('content')
+<x-layout>
     <h1>Create a new job</h1>
     <form action="/jobs" method="POST">
         @csrf
@@ -15,4 +8,4 @@ Create Job
         <button type="submit"> Submit </button>
 
     </form>
-@endsection
+</x-layout>

@@ -1,11 +1,4 @@
-@extends('layout')
-
-{{-- custom title --}}
-@section('title')
-Job Listings
-@endsection
-
-@section('content')
+<x-layout>
     @if (!empty($jobs))
         <ul>
             <!-- looping through the items using directives -->
@@ -17,4 +10,4 @@ Job Listings
     @else
         <p>No jobs found</p>
     @endif
-@endsection
+</x-layout>
