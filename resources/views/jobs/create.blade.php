@@ -1,4 +1,5 @@
 <x-layout>
+    <x-slot name="title">Create Jobs</x-slot>
     <h1>Create a new job</h1>
     <form action="/jobs" method="POST">
         @csrf
