@@ -1,3 +1,4 @@
+
 <!-- Header -->
 <header class="bg-blue-900 text-white p-4">
     <div class="container mx-auto flex justify-between items-center">
@@ -5,11 +6,11 @@
             <a href="{{url('/')}}">PataKazi</a>
         </h1>
         <nav class="hidden md:flex items-center space-x-4">
-            <a href="{{url('/jobs')}}" class="text-white hover:underline py-2">All Jobs</a>
-            <a href="{{url('/jobs/saved')}}" class="text-white hover:underline py-2">Saved Jobs</a>
-            <a href="{{url('/login')}}" class="text-white hover:underline py-2">Login</a>
-            <a href="{{url('/register')}}" class="text-white hover:underline py-2">Register</a>
-            <a href="{{url('/dashboard')}}" class="text-white hover:underline py-2">
+            <a href="{{url('/jobs')}}" class="text-white hover:underline py-2 {{request()->is('jobs') ? 'text-yellow-500 font-bold' : ''}}">All Jobs</a>
+            <a href="{{url('/jobs/saved')}}" class="text-white hover:underline py-2 {{request()->is('jobs/saved') ? 'text-yellow-500 font-bold' : ''}}">Saved Jobs</a>
+            <a href="{{url('/login')}}" class="text-white hover:underline py-2 {{request()->is('login') ? 'text-yellow-500 font-bold' : ''}}">Login</a>
+            <a href="{{url('/register')}}" class="text-white hover:underline py-2 {{request()->is('register') ? 'text-yellow-500 font-bold' : ''}}">Register</a>
+            <a href="{{url('/dashboard')}}" class="text-white hover:underline py-2 {{request()->is('dashboard') ? 'text-yellow-500 font-bold' : ''}}">
                 <i class="fa fa-gauge mr-1"></i> Dashboard
             </a>
             <a href="{{url('/jobs/create')}}"
