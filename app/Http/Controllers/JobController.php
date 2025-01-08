@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Job;
 class JobController extends Controller
 {
     /**
@@ -11,15 +11,8 @@ class JobController extends Controller
      */
     public function index()
     {
-        $title = 'Available Jobs';
-        $jobs = [
-            'Software Dev',
-            'Data Scientist',
-            'UX Designer',
-            'Product Manager',
-            'DevOps Engineer',
-        ];
-        return view('jobs.index', compact('title','jobs'));
+        $jobs = Job::all();
+        return view('jobs.index', compact('jobs'));
     }
 
     /**

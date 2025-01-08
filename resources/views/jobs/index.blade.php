@@ -1,13 +1,10 @@
 <x-layout>
-    @if (!empty($jobs))
-        <ul>
-            <!-- looping through the items using directives -->
-            @foreach ($jobs as $job)
-                <li>{{ $job }}</li>
-            @endforeach
-
-        </ul>
-    @else
-        <p>No jobs found</p>
-    @endif
+    <h1>Available Jobs</h1>
+    <ul>
+        @forelse ($jobs as $job)
+            <li>{{ $job->title }} - {{ $job->description }}</li>
+        @empty
+            <p>No jobs found</p>
+        @endforelse
+    </ul>
 </x-layout>
