@@ -36,7 +36,7 @@ class JobController extends Controller
         
         $validatedData = $request->validate([
             'title' => 'required|string',
-            'description' => 'required|text',
+            'description' => 'required|string|max:255',
         ]);
 
         Job::create([

@@ -26,7 +26,7 @@ class JobFactory extends Factory
             'job_type' => $this->faker->randomElement(['Full-time','Part-Time','Contract']),
             'remote' => $this->faker->boolean(),
             'requirements' => $this->faker->sentences(1, true),
-            'benefits' => $this->faker->sentences(1, true),
+            'benefits' => $this->faker->sentences(2, true),
             'address' => $this->faker->streetAddress(),
             'city' => $this->faker->city(),
             'state' => $this->faker->state(),
