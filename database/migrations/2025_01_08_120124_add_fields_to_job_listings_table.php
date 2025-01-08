@@ -12,7 +12,7 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void 
-    
+
     {
         // CLEAR TABLE DATA
         DB::table('job_listings')->truncate();
@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('tags')->nullable();
             $table->enum('job_type', ['Full-Time','Part-Time','Contract','Temporary','Internship','Volunteer','On-Call'])->default('Full-Time');
             $table->boolean('remote')->default(false);
-            $table->text('requirements')->nullable();
-            $table->text('benefits')->nullable();
+            $table->string('requirements')->nullable();
+            $table->string('benefits')->nullable();
             $table->string('address')->nullable();
             $table->string('city');
             $table->string('state');
