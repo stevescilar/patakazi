@@ -26,7 +26,7 @@ class JobSeeder extends Seeder
         $listing['updated_at'] = now();
         }
 
-         //insert job listings
+         //insert job list
     DB::table('job_listings')->insert($jobListings);
     echo 'Jobs created successfully';
     }
