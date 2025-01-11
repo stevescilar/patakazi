@@ -28,7 +28,7 @@ class JobSeeder extends Seeder
 
          //insert job list
     DB::table('job_listings')->insert($jobListings);
-    echo 'Jobs created successfully';
+    echo 'Jobs created';
     }
 
    
