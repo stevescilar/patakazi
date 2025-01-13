@@ -94,7 +94,7 @@
                 href="{{$job->company_website}}"
                 target="_blank"
                 class="text-blue-500"
-                >Visit Website</a
+                >Visit Website...</a
             >
 
             <a
