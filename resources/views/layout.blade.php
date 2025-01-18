@@ -27,5 +27,5 @@
     </main>
     <script src="{{ asset('js/script.js') }}"></script>
 </body>
-
+{{-- layout app --}}
 </html>
