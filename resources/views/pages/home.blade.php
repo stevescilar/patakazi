@@ -4,7 +4,7 @@
         @forelse ($jobs as $job)
             <x-job-card :job="$job" />
         @empty
-            <p>No jobs found</p>
+            <p>No jobs found, come back later</p>
         @endforelse
     </div>
     <a href="{{ route('jobs.index') }}" class="block text-xl text-center">
